@@ -171,10 +171,13 @@ class _DetailedProductsState extends State<DetailedProducts> {
                 ),
               ),
               SizedBox(height: 15),
-              Text(
-                widget.product.description,
-                style: TextStyle(
-                    fontSize: 15,color: Colors.indigoAccent),),
+              Padding(
+                padding: const EdgeInsets.only(left: 12.0, right: 10.0),
+                child: Text(
+                  widget.product.description,
+                  style: TextStyle(
+                      fontSize: 15,color: Colors.indigoAccent),),
+              ),
             ]
         )
      );
